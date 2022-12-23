@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.containerprincipal {
+    background-color: rgb(180, 173, 173);
+    display: grid;
+    grid-template-areas:
+        "navbar navbar "
+        "sidebar main "
+        "footer footer ";
+    grid-template-columns: 20% auto;
+    gap: 20px;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 2.5em;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: solid grey 1px;
+    height: 600px;
+    gap: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.sidebar a {
+    color: black;
+    text-decoration-line: none;
+}
+
+.sidebar a:hover {
+    color: blue;
+}
+
+.sidebar span {
+    opacity: 50%;
+}
+
+
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    gap: 20px;
+
+}
+
+
+.card {
+    background-color: rgb(235, 223, 223);
+    height: 300px;
+    width: 300px;
+    border: solid grey 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.card h2{
+    text-align: center;
+    padding: 2px;
+}
+
+.card p{
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.card a{
+    width: 150px;
+    background-color: blue;
+    color: rgb(177, 170, 170);
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    font-weight: bold;
+}
+
+.card  a:hover{
+    color: whitesmoke;
+}   
+
+.card img {
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+
+}
+
+.footer {
+    display: flex;
+    grid-area: footer;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+}
